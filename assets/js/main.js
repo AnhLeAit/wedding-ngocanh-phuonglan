@@ -101,6 +101,7 @@
   function renderTimeline() {
     const wrap = $("#timeline");
     wrap.innerHTML = "";
+    const selfRef = lang === "vi" ? (guest.self || "Chúng mình").toLowerCase() : "we";
     C.story.forEach((it, i) => {
       const item = document.createElement("div");
       item.className = "tl-item";
@@ -126,7 +127,7 @@
           <div class="tl-body">
             ${t(it.date) ? `<p class="tl-date">${escapeHtml(t(it.date))}</p>` : ""}
             ${t(it.title) ? `<h3 class="tl-title">${escapeHtml(t(it.title))}</h3>` : ""}
-            ${t(it.text) ? `<p class="tl-text">${escapeHtml(t(it.text))}</p>` : ""}
+            ${t(it.text) ? `<p class="tl-text">${escapeHtml(t(it.text)).replace(/\{self\}/g, escapeHtml(selfRef))}</p>` : ""}
             ${it.poem ? poemBlockHTML() : ""}
           </div>
         </article>`;

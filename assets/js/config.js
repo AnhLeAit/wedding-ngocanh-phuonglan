@@ -87,14 +87,14 @@ const CONFIG = {
     {
       date:  { vi: "29.07.2026", en: "Jul 29, 2026" },
       title: { vi: "Lễ Vu Quy", en: "The Vu Quy ceremony" },
-      text:  { vi: "Theo phong tục, lễ Vu Quy được cử hành tại nhà gái — nơi em chính thức về làm dâu.",
-               en: "Following tradition, the Vu Quy ceremony is held at the bride's home — the day she formally weds." },
+      text:  { vi: "Theo phong tục, lễ Vu Quy được cử hành tại nhà gái.",
+               en: "Following tradition, the Vu Quy ceremony is held at the bride's home." },
       imgs:  ["assets/images/prewedding/pre-01.jpg", "assets/images/prewedding/pre-04.jpg", "assets/images/prewedding/pre-09.jpg", "assets/images/prewedding/pre-12.jpg"],
     },
     {
       date:  { vi: "01.08.2026", en: "Aug 1, 2026" },
       title: { vi: "Chung một nhà", en: "Forever begins" },
-      text:  { vi: "Và rồi, ngày trọng đại nhất cũng đến. Hạnh phúc này, chúng mình muốn được sẻ chia cùng bạn.",
+      text:  { vi: "Và rồi, ngày trọng đại nhất cũng đến. Hạnh phúc này, {self} muốn được sẻ chia cùng bạn.",
                en: "And so, the most important day arrives. This happiness — we long to share it with you." },
       imgs:  ["assets/images/prewedding/pre-02.jpg", "assets/images/prewedding/pre-08.jpg", "assets/images/prewedding/pre-10.jpg", "assets/images/prewedding/pre-13.jpg"],
     },
