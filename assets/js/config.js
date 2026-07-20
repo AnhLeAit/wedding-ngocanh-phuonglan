@@ -74,7 +74,7 @@ const CONFIG = {
     },
     {
       // Thẻ chỉ có chữ (không ảnh) / text-only interlude card
-      text:  { vi: "Đi nhiều nơi khắp dải đất chữ S, để lại nhiều kỉ niệm - và cuối cùng chúng mình quyết định dừng lại.... ở Biên Hoà để xây dựng tổ ấm của riêng mình!",
+      text:  { vi: "Đi nhiều nơi khắp dải đất chữ S, để lại nhiều kỉ niệm - và cuối cùng {self} quyết định dừng lại.... ở Biên Hoà để xây dựng tổ ấm của riêng mình!",
                en: "We wandered across every corner of our S-shaped homeland, gathering countless memories — and in the end, we chose to settle... in Biên Hòa, to build a home of our own!" },
     },
     {
@@ -94,7 +94,7 @@ const CONFIG = {
     {
       date:  { vi: "01.08.2026", en: "Aug 1, 2026" },
       title: { vi: "Chung một nhà", en: "Forever begins" },
-      text:  { vi: "Và rồi, ngày trọng đại nhất cũng đến. Hạnh phúc này, {self} muốn được sẻ chia cùng bạn.",
+      text:  { vi: "Và rồi, ngày trọng đại nhất cũng đến. Hạnh phúc này, {self} muốn được sẻ chia cùng {title}.",
                en: "And so, the most important day arrives. This happiness — we long to share it with you." },
       imgs:  ["assets/images/prewedding/pre-02.jpg", "assets/images/prewedding/pre-08.jpg", "assets/images/prewedding/pre-10.jpg", "assets/images/prewedding/pre-13.jpg"],
     },
