@@ -204,7 +204,23 @@
 
   /* ---- Location ---- */
   function renderLocationText() {
-    $("#map-frame").src = C.location.mapEmbed;
+    const frame = $("#map-frame");
+    // Chạy 1 lần: một số trình duyệt bảo mật cao chặn iframe Google Maps
+    // (net::ERR_BLOCKED_BY_RESPONSE) và không phát sự kiện load → ẩn khung
+    // bản đồ đi (vẫn còn QR + nút "Mở bản đồ" bên cạnh).
+    if (frame && !frame.dataset.init) {
+      frame.dataset.init = "1";
+      let loaded = false;
+      frame.addEventListener("load", () => { loaded = true; }, { once: true });
+      frame.src = C.location.mapEmbed;
+      setTimeout(() => {
+        if (loaded) return;
+        const box = frame.closest(".loc-map");
+        if (box) box.hidden = true;
+        const grid = frame.closest(".loc-grid");
+        if (grid) grid.classList.add("no-map");
+      }, 4000);
+    }
     $("#loc-qr-img").src = C.location.qrImage;
     setText("loc-qr-cap", t(C.location.qrCaption));
     $("#map-link").href = C.location.mapLink;
