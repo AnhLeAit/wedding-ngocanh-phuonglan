@@ -61,9 +61,9 @@ const CONFIG = {
     {
       date:  { vi: "2024", en: "2024" },
       title: { vi: "Từng ngày bên nhau", en: "Day by day, together" },
-      text:  { vi: "Những buổi sáng, những chiều muộn, mọi khoảnh khắc đều trở nên đáng nhớ khi có em kề bên.",
+      text:  { vi: "Mọi khoảnh khắc đều trở nên đáng nhớ khi có em kề bên.",
                en: "Mornings, late afternoons — every moment became unforgettable with you by my side." },
-      imgs:  ["assets/images/love/love-02.jpg", "assets/images/love/love-03.jpg", "assets/images/love/love-06.jpg", "assets/images/love/love-07.jpg", "assets/images/love/love-08.jpg", "assets/images/love/love-09.jpg", "assets/images/love/love-10.jpg", "assets/images/love/love-11.jpg", "assets/images/love/love-12.jpg", "assets/images/love/love-01.jpg"],
+      imgs:  ["assets/images/love/love-02.jpg", "assets/images/love/love-03.jpg", "assets/images/love/love-06.jpg", "assets/images/love/love-07.jpg", "assets/images/love/love-08.jpg", "assets/images/love/love-09.jpg", "assets/images/love/love-10.jpg", "assets/images/love/love-11.jpg", "assets/images/love/love-12.jpg", "assets/images/love/love-01.jpg", "assets/images/moments/moment-01.jpg", "assets/images/moments/moment-02.jpg", "assets/images/moments/moment-03.jpg", "assets/images/moments/moment-04.jpg", "assets/images/moments/moment-05.jpg"],
     },
     {
       date:  { vi: "2025", en: "2025" },
@@ -145,6 +145,11 @@ const CONFIG = {
       "assets/images/love/love-11.jpg",
       "assets/images/love/love-04.jpg",
       "assets/images/love/love-01.jpg",
+      "assets/images/moments/moment-01.jpg",
+      "assets/images/moments/moment-02.jpg",
+      "assets/images/moments/moment-03.jpg",
+      "assets/images/moments/moment-04.jpg",
+      "assets/images/moments/moment-05.jpg",
     ],
   },
 
@@ -189,7 +194,7 @@ const CONFIG = {
         Nội dung CK: <Danh xưng>-<Tên khách>-<addInfoSuffix theo bên>   */
   gift: {
     heading: { vi: "Gửi trao lời chúc", en: "Send your blessing" },
-    note: { vi: "Sự hiện diện của bạn đã là món quà quý giá. Nhưng nếu không thể góp mặt bạn có thể chung vui online vỡi mã QR.",
+    note: { vi: "Sự hiện diện của bạn đã là món quà quý giá. Nhưng nếu không thể góp mặt bạn có thể chung vui online với mã QR.",
             en: "Your presence is a precious gift. But if you can't be there, you can celebrate online using the QR code." },
     // Nội dung chuyển khoản: <Danh xưng>-<Tên khách>-<suffix theo bên>
     groom: {
