@@ -55,14 +55,15 @@ img{ max-width:100%; display:block; }
 .enter-inner{ padding:2rem; }
 .double-happiness{
   font-family:var(--serif); font-size:clamp(3.5rem,12vw,6rem); color:#fff;
-  text-shadow:0 4px 30px rgba(0,0,0,.5); line-height:1;
+  text-shadow:0 4px 30px rgba(0,0,0,.5); line-height:1; margin-top:-2rem;
 }
 .enter-names{
   font-family:var(--script); font-size:clamp(2.6rem,9vw,5rem);
-  margin:.6rem 0 .2rem; letter-spacing:1px;
+  margin:.3rem 0 .2rem; letter-spacing:1px;
   text-shadow:0 4px 24px rgba(0,0,0,.45);
+  display:flex; flex-direction:column; align-items:center;
 }
-.enter-names .amp{ color:var(--gold-soft); margin:0 .35rem; }
+.enter-names .amp{ display:block; color:var(--gold-soft); font-size:.5em; margin:.12em 0; line-height:1; }
 .enter-date{ letter-spacing:.4em; font-size:clamp(.8rem,3vw,1rem); opacity:.9; margin-bottom:2rem; }
 .enter-btn{
   font-family:var(--body); font-size:1rem; font-weight:500;
@@ -136,13 +137,14 @@ img{ max-width:100%; display:block; }
   background:linear-gradient(rgba(50,36,26,.42), rgba(50,36,26,.5) 55%, rgba(50,36,26,.68));
 }
 .hero-inner{ position:relative; z-index:2; padding:1rem; max-width:820px; }
-.hero-dh{ font-family:var(--serif); font-size:clamp(2.2rem,7vw,3.4rem); color:var(--gold-soft); text-shadow:0 3px 20px rgba(0,0,0,.5); }
-.hero-kicker{ letter-spacing:.5em; text-transform:uppercase; font-size:.72rem; opacity:.85; margin:.6rem 0 .3rem; }
+.hero-dh{ font-family:var(--serif); font-size:clamp(2.2rem,7vw,3.4rem); color:var(--gold-soft); text-shadow:0 3px 20px rgba(0,0,0,.5); display:block; margin-top:-2rem; line-height:1; }
+.hero-kicker{ letter-spacing:.5em; text-transform:uppercase; font-size:.72rem; opacity:.85; margin:.3rem 0 .2rem; }
 .hero-names{
   font-family:var(--script); font-weight:400; line-height:1.05;
   font-size:clamp(3rem,11vw,6.5rem); text-shadow:0 6px 30px rgba(0,0,0,.5);
+  display:flex; flex-direction:column; align-items:center;
 }
-.hero-amp{ display:inline-block; color:var(--gold-soft); margin:0 .3rem; }
+.hero-amp{ display:block; color:var(--gold-soft); font-size:.5em; margin:.12em 0; line-height:1; }
 .hero-date{ letter-spacing:.45em; font-size:clamp(.85rem,3vw,1.15rem); margin-top:.4rem; opacity:.95; }
 
 .hero-invite{
@@ -380,7 +382,8 @@ img{ max-width:100%; display:block; }
 .site-footer{ text-align:center; padding:3.5rem 1.25rem 5.5rem; background:linear-gradient(180deg, transparent, rgba(193,154,75,.12)); }
 .footer-dh{ font-family:var(--serif); font-size:2rem; color:var(--red); }
 .footer-thanks{ letter-spacing:.3em; text-transform:uppercase; font-size:.75rem; color:var(--ink-soft); margin:.6rem 0; }
-.footer-names{ font-family:var(--script); font-size:2.4rem; color:var(--red-deep); }
+.footer-names{ font-family:var(--script); font-size:2.4rem; color:var(--red-deep); display:flex; flex-direction:column; align-items:center; line-height:1.1; }
+.footer-names .amp{ display:block; font-size:.5em; margin:.08em 0; line-height:1; }
 .footer-date{ letter-spacing:.4em; font-size:.8rem; color:var(--ink-soft); margin-top:.3rem; }
 
 /* ---------- Falling petals ---------- */

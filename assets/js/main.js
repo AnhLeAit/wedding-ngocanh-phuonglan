@@ -52,9 +52,8 @@
 
   function renderNames() {
     const g = t(C.couple.groom.name), b = t(C.couple.bride.name);
-    ["enter-groom", "hero-groom", "card-groom"].forEach((id) => setText(id, g));
-    ["enter-bride", "hero-bride", "card-bride"].forEach((id) => setText(id, b));
-    setText("footer-names", g + " & " + b);
+    ["enter-groom", "hero-groom", "card-groom", "footer-groom"].forEach((id) => setText(id, g));
+    ["enter-bride", "hero-bride", "card-bride", "footer-bride"].forEach((id) => setText(id, b));
     setText("hero-date", C.couple.displayDate);
     // families
     setText("groom-father", C.couple.groom.father);
