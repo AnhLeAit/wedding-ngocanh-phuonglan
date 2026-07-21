@@ -11,8 +11,10 @@ const CONFIG = {
   /* ---- Cặp đôi / The couple ---------------------------------------- */
   couple: {
     doubleHappiness: "囍",
-    // Giờ cưới chính thức (tiệc): 17:00, 01/08/2026 (GMT+7)
-    weddingDateTime: "2026-08-01T17:00:00+07:00",
+    // Giờ cưới chính thức (tiệc): 18:00, 01/08/2026 (GMT+7)
+    weddingDateTime: "2026-08-01T18:00:00+07:00",
+    // Sau mốc này: ẩn đồng hồ, hiện lời nhắn "đã về chung một nhà" — 23:00, 01/08/2026 (GMT+7)
+    countdownEndDateTime: "2026-08-01T23:00:00+07:00",
     displayDate: "01 . 08 . 2026",
 
     groom: {
@@ -164,7 +166,7 @@ const CONFIG = {
     },
     reception: {
       label:    { vi: "Tiệc Cưới", en: "Wedding Reception" },
-      time:     { vi: "17:00 · Thứ Bảy, 01.08.2026", en: "17:00 · Sat, Aug 1, 2026" },
+      time:     { vi: "18:00 · Thứ Bảy, 01.08.2026", en: "18:00 · Sat, Aug 1, 2026" },
       lunar:    { vi: "(Nhằm ngày 19 tháng 06 năm Bính Ngọ)", en: "(19th day, 6th lunar month, Year of the Horse)" },
       venue:    { vi: "Trung tâm Hội nghị & Tiệc cưới Golden Lotus", en: "Golden Lotus Wedding & Convention Center" },
       hall:     { vi: "Sen Vàng – Sảnh Tulip", en: "Golden Lotus – Tulip Hall" },

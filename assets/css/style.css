@@ -163,6 +163,18 @@ img{ max-width:100%; display:block; }
 .cd-num{ font-family:var(--serif); font-size:1.6rem; line-height:1; }
 .cd-lbl{ font-size:.66rem; letter-spacing:.15em; text-transform:uppercase; opacity:.85; margin-top:.35rem; }
 
+/* Trạng thái "Lễ cưới đang diễn ra" (đếm xuôi) */
+.cd-status{
+  margin-top:2rem; font-size:clamp(.9rem,2.6vw,1.1rem); letter-spacing:.12em;
+  text-transform:uppercase; color:#fff; opacity:.95;
+}
+.cd-status + .countdown{ margin-top:.9rem; }
+/* Lời nhắn sau lễ cưới */
+.cd-done{
+  margin-top:2rem; font-family:var(--serif);
+  font-size:clamp(1.3rem,4.5vw,2rem); line-height:1.35; color:#fff;
+}
+
 /* Animated "scroll down" arrow cue */
 .scroll-down{
   position:absolute; bottom:1.3rem; left:50%; transform:translateX(-50%);

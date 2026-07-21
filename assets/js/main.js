@@ -352,10 +352,13 @@
      COUNTDOWN
      ================================================================ */
   function initCountdown() {
-    const target = new Date(C.couple.weddingDateTime).getTime();
+    const start = new Date(C.couple.weddingDateTime).getTime();
+    const end = new Date(C.couple.countdownEndDateTime || C.couple.weddingDateTime).getTime();
     const el = { d: $("#cd-d"), h: $("#cd-h"), m: $("#cd-m"), s: $("#cd-s") };
-    function tick() {
-      let diff = Math.max(0, target - Date.now());
+    const clock = $("#countdown"), status = $("#cd-status"), done = $("#cd-done");
+
+    function paint(ms) {
+      let diff = Math.max(0, ms);
       const d = Math.floor(diff / 864e5); diff -= d * 864e5;
       const h = Math.floor(diff / 36e5); diff -= h * 36e5;
       const m = Math.floor(diff / 6e4); diff -= m * 6e4;
@@ -364,7 +367,26 @@
       el.m.textContent = String(m).padStart(2, "0");
       el.s.textContent = String(s).padStart(2, "0");
     }
-    tick(); setInterval(tick, 1000);
+
+    let timer = null;
+    function tick() {
+      const now = Date.now();
+      if (now < start) {
+        // Trước lễ: đếm ngược
+        clock.hidden = false; status.hidden = true; done.hidden = true;
+        paint(start - now);
+      } else if (now < end) {
+        // Đang diễn ra: đếm xuôi thời gian từ lúc bắt đầu lễ
+        clock.hidden = false; status.hidden = false; done.hidden = true;
+        paint(now - start);
+      } else {
+        // Sau lễ: ẩn đồng hồ, hiện lời nhắn
+        clock.hidden = true; status.hidden = true; done.hidden = false;
+        if (timer) clearInterval(timer);
+      }
+    }
+    tick();
+    timer = setInterval(tick, 1000);
   }
 
   /* ================================================================
